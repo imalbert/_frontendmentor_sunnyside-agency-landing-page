@@ -2,16 +2,21 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import ArrowDownIcon from "../images/icon-arrow-down.svg";
+import HeroBg from "../images/desktop/image-header.jpg";
 
 export default function Home() {
   return (
     <>
-      <nav>About Services Projects Contact</nav>
+      <header>
+        <div className={styles.hero}>
+          <nav>About Services Projects Contact</nav>
+          <main>
+            <h1>We are creatives</h1>
+            <Image src={ArrowDownIcon} alt="" />
+          </main>
+        </div>
+      </header>
       <main>
-        <section className={styles.hero}>
-          <h1>We are creatives</h1>
-          <Image src={ArrowDownIcon} alt="" />
-        </section>
         <section>
           <h2>Transform your brand</h2>
           <p>
