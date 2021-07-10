@@ -1,8 +1,8 @@
-import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import ArrowDownIcon from "../images/icon-arrow-down.svg";
-import HeroBg from "../images/desktop/image-header.jpg";
+import ImageTransform from "../images/desktop/image-transform.jpg";
+import ImageStandOut from "../images/desktop/image-stand-out.jpg";
 
 export default function Home() {
   return (
@@ -12,12 +12,16 @@ export default function Home() {
           <nav>About Services Projects Contact</nav>
           <main>
             <h1>We are creatives</h1>
-            <Image src={ArrowDownIcon} alt="" />
+            <Image src={ArrowDownIcon} alt="scroll down" />
           </main>
         </div>
       </header>
       <main>
-        <section>
+        <Image
+          src={ImageTransform}
+          alt="A render of an egg on a yellow background"
+        />
+        <section className={styles.section}>
           <h2>Transform your brand</h2>
           <p>
             We are a full-service creative agency specializing in helping brands
@@ -26,12 +30,16 @@ export default function Home() {
           </p>
           Learn more
         </section>
-        <section>
-          <h2>Transform your brand</h2>
+        <Image
+          src={ImageStandOut}
+          alt="A render of a pink cup on a pink background"
+        />
+        <section className={styles.section}>
+          <h2>Stand out to the right audience</h2>
           <p>
-            Stand out to the right audience Using a collaborative formula of
-            designers, researchers, photographers, videographers, and
-            copywriters, we’ll build and extend your brand in digital places.
+            Using a collaborative formula of designers, reseearchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
           </p>
           Learn more
         </section>
