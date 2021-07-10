@@ -3,6 +3,8 @@ import styles from "../styles/Home.module.css";
 import ArrowDownIcon from "../images/icon-arrow-down.svg";
 import ImageTransform from "../images/desktop/image-transform.jpg";
 import ImageStandOut from "../images/desktop/image-stand-out.jpg";
+import ImageGraphicDesign from "../images/desktop/image-graphic-design.jpg";
+import ImagePhotography from "../images/desktop/image-photography.jpg";
 
 export default function Home() {
   return (
@@ -38,12 +40,14 @@ export default function Home() {
           <h2>Stand out to the right audience</h2>
           <p>
             Using a collaborative formula of designers, reseearchers,
-            photographers, videographers, and copywriters, we'll build and
+            photographers, videographers, and copywriters, we&apos;ll build and
             extend your brand in digital places.
           </p>
           Learn more
         </section>
-        <section>
+        <section
+          className={`${styles.tallSection} ${styles.graphicDesignerBg}`}
+        >
           <h2>Graphic design</h2>
           <p>
             Great design makes you memorable. We deliver artwork that
@@ -51,7 +55,7 @@ export default function Home() {
             attention.
           </p>
         </section>
-        <section>
+        <section className={`${styles.tallSection} ${styles.photographyBg}`}>
           <h2>Photography</h2>
           <p>
             Increase your credibility by getting the most stunning, high-quality
