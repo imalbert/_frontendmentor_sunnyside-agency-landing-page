@@ -30,7 +30,9 @@ export default function Home() {
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          Learn more
+          <a className="yellow" href="#">
+            Learn more
+          </a>
         </section>
         <Image
           src={ImageStandOut}
@@ -43,7 +45,9 @@ export default function Home() {
             photographers, videographers, and copywriters, we&apos;ll build and
             extend your brand in digital places.
           </p>
-          Learn more
+          <a className="pink" href="#">
+            Learn more
+          </a>
         </section>
         <section
           className={`${styles.tallSection} ${styles.graphicDesignerBg}`}

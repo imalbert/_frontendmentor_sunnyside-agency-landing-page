@@ -18,9 +18,34 @@ h2 {
   font-weight: 900;
 }
 
+:root {
+  --a-border-bottom-color: lightblue;
+}
+
 a {
   color: inherit;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'Fraunces';
+  position: relative;
   text-decoration: none;
+  font-weight: 900;
+}
+a::before{
+  content: "";
+  width: 110%;
+  border-bottom: 0.7em solid var(--a-border-bottom-color);
+  position: absolute;
+  left: -0.4em;
+  bottom: -0.15em;
+  z-index: -1;
+  border-radius: 10px;
+}
+a.yellow::before {
+  --a-border-bottom-color: #FDF2BF;
+}
+a.pink::before {
+  --a-border-bottom-color: #F7DCD3;
 }
 
 * {
