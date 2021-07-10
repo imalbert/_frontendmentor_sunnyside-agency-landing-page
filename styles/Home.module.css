@@ -6,8 +6,8 @@
   background-color: #65BBF9;
   background-image: url('../images/mobile/image-header.jpg');
   background-size: cover;
-  background-position-x: 50%;
-  background-position-y: bottom;
+  background-position-x: 49.3%;
+  background-position-y: 98%;
   background-repeat: no-repeat;
 
   display: flex;
@@ -21,11 +21,14 @@
   text-align: center;
   padding: 30px 20px;
 }
-@media (min-width: 375px) {
+
+@media(min-width: 495px) {
   .hero {
     background-image: url('../images/desktop/image-header.jpg')
   }
+}
 
+@media (min-width: 375px) {
   .grid {
     width: 100%;
     flex-direction: column;
