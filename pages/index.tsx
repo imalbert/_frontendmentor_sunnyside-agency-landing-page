@@ -12,7 +12,7 @@ export default function Home() {
           <nav>About Services Projects Contact</nav>
           <main>
             <h1>We are creatives</h1>
-            {/* <Image src={ArrowDownIcon} alt="" /> */}
+            <Image src={ArrowDownIcon} alt="" />
           </main>
         </div>
       </header>
