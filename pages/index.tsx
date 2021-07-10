@@ -12,7 +12,7 @@ export default function Home() {
           <nav>About Services Projects Contact</nav>
           <main>
             <h1>We are creatives</h1>
-            <Image src={ArrowDownIcon} alt="" />
+            {/* <Image src={ArrowDownIcon} alt="" /> */}
           </main>
         </div>
       </header>
@@ -53,7 +53,7 @@ export default function Home() {
         <section>
           <h3>Client testimonials</h3>
           <div>
-            <img src="" alt="" />
+            {/* <Image src="" alt="" /> */}
             <p>
               We put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit.
@@ -62,7 +62,7 @@ export default function Home() {
             <span>Marketing Director</span>
           </div>
           <div>
-            <img src="" alt="" />
+            {/* <Image src="" alt="" /> */}
             <p>
               Sunnyside’s enthusiasm coupled with their keen interest in our
               brand’s success made it a satisfying and enjoyable experience.
@@ -71,7 +71,7 @@ export default function Home() {
             <span>Operating Officer</span>
           </div>
           <div>
-            <img src="" alt="" />
+            {/* <Image src="" alt="" /> */}
             <p>
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
@@ -80,7 +80,7 @@ export default function Home() {
             <span>Business Owner</span>
           </div>
         </section>
-        <img src="" alt="" />
+        {/* <Image src="" alt="" /> */}
         <footer>About Services Projects Contact</footer>
 
         <div className="attribution">

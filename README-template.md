@@ -59,24 +59,60 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+```html
+<!-- I always struggle and overthink hero layouts with background images under overlay text -->
 
-To see how you can add code snippets, see below:
+<!-- one way is by setting the background <img> as position: absolute and the content as siblings -- which could not make it work to my liking -->
+
+<!-- here's one way with background-image that I went with this time -->
+<header>
+  <div className={styles.hero}>
+    <nav>About Services Projects Contact</nav>
+    <main>
+      <h1>We are creatives</h1>
+      <Image src={ArrowDownIcon} alt="" />
+    </main>
+  </div>
+</header>
+
+<style>
+.hero {
+  min-height: 544px;
+  background-color: #65BBF9;
+  background-image: url('../images/mobile/image-header.jpg');
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+}
+.hero>nav {
+  text-align: right;
+}
+.hero>main {
+  flex: 1;
+  text-align: center;
+  padding: 30px 20px;
+}
+</style>
+```
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
+<!-- By default, Next.js will automatically inline font CSS at build time, eliminating an extra round trip to fetch font declarations. This results in improvements to First Contentful Paint (FCP) and Largest Contentful Paint (LCP). -->
+<!-- https://nextjs.org/docs/basic-features/font-optimization -->
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+<!-- Before -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter"
+  rel="stylesheet"
+/>
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
+<!-- After "only on the prod build version" -->
+<style data-href="https://fonts.googleapis.com/css2?family=Inter">
+  @font-face{font-family:'Inter';font-style:normal...
+</style>
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
