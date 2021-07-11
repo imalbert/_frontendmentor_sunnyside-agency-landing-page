@@ -3,15 +3,20 @@ import styles from "../styles/Home.module.css";
 import ArrowDownIcon from "../images/icon-arrow-down.svg";
 import ImageTransform from "../images/desktop/image-transform.jpg";
 import ImageStandOut from "../images/desktop/image-stand-out.jpg";
-import ImageGraphicDesign from "../images/desktop/image-graphic-design.jpg";
-import ImagePhotography from "../images/desktop/image-photography.jpg";
+import HamburgerIcon from "../images/icon-hamburger.svg";
 
 export default function Home() {
   return (
     <>
       <header>
         <div className={styles.hero}>
-          <nav>About Services Projects Contact</nav>
+          <nav className={styles.mobileNav}>
+            <Image src={HamburgerIcon} alt="scroll down" />
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+          </nav>
           <main>
             <h1>We are creatives</h1>
             <Image src={ArrowDownIcon} alt="scroll down" />
