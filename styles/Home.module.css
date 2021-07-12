@@ -24,6 +24,45 @@
 .hero h1 {
   color: white;
 }
+/* Header nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px;
+}
+.logo {
+  font-family: Barlow;
+  font-size: 2em;
+  letter-spacing: -0.05em;
+  color: white;
+  z-index: 99999;
+}
+.mobileNav {
+  padding: 28px 0 20px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  position: absolute;
+  background-color: #66BBF9AA;
+  width: 100%;
+  transition: ease-in 0.1s;
+  z-index: -1;
+}
+.mobileNav > * {
+  padding: 1em 30px;
+}
+.mobileNav > a {
+  font-size: 1.8em;
+  color: white;
+  width: 100%;
+}
+.mobileNav > a::before { content: none; }
+.open {
+  opacity: 1;
+  z-index: 9999;
+}
+/* End header nav */
 
 .section,
 .tallSection {

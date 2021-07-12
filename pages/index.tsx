@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import ArrowDownIcon from "../images/icon-arrow-down.svg";
@@ -6,12 +7,31 @@ import ImageStandOut from "../images/desktop/image-stand-out.jpg";
 import HamburgerIcon from "../images/icon-hamburger.svg";
 
 export default function Home() {
+  const [navOpen, toggleNav] = React.useState(false);
   return (
     <>
       <header>
         <div className={styles.hero}>
-          <nav className={styles.mobileNav}>
-            <Image src={HamburgerIcon} alt="scroll down" />
+          <nav className={styles.nav}>
+            <span className={styles.logo}>sunnyside</span>
+            <div onClick={() => toggleNav(!navOpen)}>
+              <Image
+                height="20"
+                width="25"
+                src={HamburgerIcon}
+                alt="scroll down"
+              />
+            </div>
+          </nav>
+          <nav className={`${styles.mobileNav} ${navOpen ? styles.open : ""}`}>
+            <div onClick={() => toggleNav(!navOpen)}>
+              <Image
+                height="20"
+                width="25"
+                src={HamburgerIcon}
+                alt="scroll down"
+              />
+            </div>
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Projects</a>
