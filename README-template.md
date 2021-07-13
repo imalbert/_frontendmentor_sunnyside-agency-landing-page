@@ -59,6 +59,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+#### Hero background
+
 ```html
 <!-- I always struggle and overthink hero layouts with background images under overlay text -->
 
@@ -99,6 +101,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 </style>
 ```
 
+#### Nextjs font optimization
+
 ```html
 <!-- By default, Next.js will automatically inline font CSS at build time, eliminating an extra round trip to fetch font declarations. This results in improvements to First Contentful Paint (FCP) and Largest Contentful Paint (LCP). -->
 <!-- https://nextjs.org/docs/basic-features/font-optimization -->
@@ -114,6 +118,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
   @font-face{font-family:'Inter';font-style:normal...
 </style>
 ```
+
+#### Hiding components for nav
+
+https://www.accessibility-developer-guide.com/examples/hiding-elements/
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
