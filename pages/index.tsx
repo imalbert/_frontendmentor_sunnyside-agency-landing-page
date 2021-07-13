@@ -5,6 +5,9 @@ import ArrowDownIcon from "../images/icon-arrow-down.svg";
 import ImageTransform from "../images/desktop/image-transform.jpg";
 import ImageStandOut from "../images/desktop/image-stand-out.jpg";
 import HamburgerIcon from "../images/icon-hamburger.svg";
+import ImageEmily from "../images/image-emily.jpg";
+import ImageThomas from "../images/image-thomas.jpg";
+import ImageJennie from "../images/image-jennie.jpg";
 
 export default function Home() {
   const [navOpen, toggleNav] = React.useState(false);
@@ -93,7 +96,14 @@ export default function Home() {
         </section>
         <section className={`${styles.section} ${styles.testimonials}`}>
           <h3>Client testimonials</h3>
-          {/* <Image src="" alt="" /> */}
+          <div className={styles.avatar}>
+            <Image
+              height="70"
+              width="70"
+              src={ImageEmily}
+              alt="Image of Emily R."
+            />
+          </div>
           <p>
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
@@ -103,7 +113,15 @@ export default function Home() {
             <h5>Marketing Director</h5>
           </div>
 
-          {/* <Image src="" alt="" /> */}
+          <div className={styles.avatar}>
+            <Image
+              className={styles.avatar}
+              height="70"
+              width="70"
+              src={ImageThomas}
+              alt="Image of Thomas S. Chief"
+            />
+          </div>
           <p>
             Sunnyside’s enthusiasm coupled with their keen interest in our
             brand’s success made it a satisfying and enjoyable experience.
@@ -113,7 +131,15 @@ export default function Home() {
             <h5>Operating Officer</h5>
           </div>
 
-          {/* <Image src="" alt="" /> */}
+          <div className={styles.avatar}>
+            <Image
+              className={styles.avatar}
+              height="70"
+              width="70"
+              src={ImageJennie}
+              alt="Image of Jennie F."
+            />
+          </div>
           <p>
             Incredible end result! Our sales increased over 400% when we worked
             with Sunnyside. Highly recommended!
