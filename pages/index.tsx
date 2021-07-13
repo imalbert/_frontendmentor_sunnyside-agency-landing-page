@@ -91,34 +91,36 @@ export default function Home() {
             photos that improve your business image.
           </p>
         </section>
-        <section className={styles.section}>
+        <section className={`${styles.section} ${styles.testimonials}`}>
           <h3>Client testimonials</h3>
-          <div>
-            {/* <Image src="" alt="" /> */}
-            <p>
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit.
-            </p>
+          {/* <Image src="" alt="" /> */}
+          <p>
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div className={styles.nameAndTitle}>
             <h4>Emily R.</h4>
             <h5>Marketing Director</h5>
           </div>
-          <div>
-            {/* <Image src="" alt="" /> */}
-            <p>
-              Sunnyside’s enthusiasm coupled with their keen interest in our
-              brand’s success made it a satisfying and enjoyable experience.
-            </p>
+
+          {/* <Image src="" alt="" /> */}
+          <p>
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <div className={styles.nameAndTitle}>
             <h4>Thomas S. Chief</h4>
-            <span>Operating Officer</span>
+            <h5>Operating Officer</h5>
           </div>
-          <div>
-            {/* <Image src="" alt="" /> */}
-            <p>
-              Incredible end result! Our sales increased over 400% when we
-              worked with Sunnyside. Highly recommended!
-            </p>
+
+          {/* <Image src="" alt="" /> */}
+          <p>
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div className={styles.nameAndTitle}>
             <h4>Jennie F.</h4>
-            <span>Business Owner</span>
+            <h5>Business Owner</h5>
           </div>
         </section>
         {/* <Image src="" alt="" /> */}

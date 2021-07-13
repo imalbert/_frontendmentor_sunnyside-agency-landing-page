@@ -10,10 +10,15 @@ body {
 a {
   font-size: 0.85em;
 }
+p {
+  margin: 0;
+  line-height: 1.75em;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fraunces';
   font-weight: 900;
   color: #272F3D;
+  margin: 0;
 }
 h1 {
   text-transform: uppercase;
