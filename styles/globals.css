@@ -3,10 +3,16 @@ body {
   font-size: 18px;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Barlow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+a {
+  font-size: 0.85em;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #272F3D;
+}
 h1 {
   font-family: 'Fraunces';
   font-weight: 900;
