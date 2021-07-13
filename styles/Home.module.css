@@ -83,6 +83,7 @@
 }
 .tallSection p {
   font-weight: 600;
+  font-size: 0.85em;
   color: rgba(0,0,0,0.6);
 }
 .imgBg {
@@ -104,6 +105,8 @@
 .bgOverlay {
   position: relative;
 }
+
+/* testimonials */
 
 @media(min-width: 495px) {
   .hero {

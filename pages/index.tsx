@@ -91,7 +91,7 @@ export default function Home() {
             photos that improve your business image.
           </p>
         </section>
-        <section>
+        <section className={styles.section}>
           <h3>Client testimonials</h3>
           <div>
             {/* <Image src="" alt="" /> */}
@@ -100,7 +100,7 @@ export default function Home() {
               needs were met and deadlines were always hit.
             </p>
             <h4>Emily R.</h4>
-            <span>Marketing Director</span>
+            <h5>Marketing Director</h5>
           </div>
           <div>
             {/* <Image src="" alt="" /> */}

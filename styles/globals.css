@@ -11,17 +11,29 @@ a {
   font-size: 0.85em;
 }
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces';
+  font-weight: 900;
   color: #272F3D;
 }
 h1 {
-  font-family: 'Fraunces';
-  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-h2 {
-  font-family: 'Fraunces';
-  font-weight: 900;
+h3 {
+  color: #A9AAAD;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+h4 {
+  font-size: 0.9em;
+  color: #272F3D;
+}
+h5 {
+  color: #A9AAAD;
+  font-size: 0.8em;
+  font-family: unset;
+  font-weight: 500;
 }
 
 :root {
