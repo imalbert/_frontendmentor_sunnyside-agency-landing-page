@@ -40,6 +40,10 @@ h5 {
   font-family: unset;
   font-weight: 500;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 
 :root {
   --a-border-bottom-color: lightblue;

@@ -12,6 +12,10 @@ import ImageGalleryCone from "../images/desktop/image-gallery-cone.jpg";
 import ImageGalleryMilkBottle from "../images/desktop/image-gallery-milkbottles.jpg";
 import ImageGalleryOrange from "../images/desktop/image-gallery-orange.jpg";
 import ImageGallerySugarcubes from "../images/desktop/image-gallery-sugarcubes.jpg";
+import IconFB from "../images/icon-facebook.svg";
+import IconIG from "../images/icon-instagram.svg";
+import IconPT from "../images/icon-pinterest.svg";
+import IconTW from "../images/icon-twitter.svg";
 
 export default function Home() {
   const [navOpen, toggleNav] = React.useState(false);
@@ -185,7 +189,32 @@ export default function Home() {
             objectFit="cover"
           />
         </section>
-        <footer>About Services Projects Contact</footer>
+        <footer className={styles.footer}>
+          <span className={styles.logo}>sunnyside</span>
+          <div className={styles.links}>
+            <ul>
+              <li>About</li>
+              <li>Services</li>
+              <li>Projects</li>
+            </ul>
+          </div>
+          <div className={styles.socials}>
+            <ul>
+              <li>
+                <Image src={IconFB} alt="Facebook" width="20" height="20" />
+              </li>
+              <li>
+                <Image src={IconIG} alt="Instagram" width="20" height="20" />
+              </li>
+              <li>
+                <Image src={IconPT} alt="Pinterest" width="20" height="20" />
+              </li>
+              <li>
+                <Image src={IconTW} alt="Twitter" width="20" height="20" />
+              </li>
+            </ul>
+          </div>
+        </footer>
 
         <div className="attribution">
           Challenge by{" "}
