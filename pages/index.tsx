@@ -152,10 +152,38 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.gallery}>
-          <Image src={ImageGalleryMilkBottle} alt="Milk bottle" />
-          <Image src={ImageGalleryOrange} alt="Orange" />
-          <Image src={ImageGalleryCone} alt="Ice cream cone" />
-          <Image src={ImageGallerySugarcubes} alt="Sugar cubes" />
+          <Image
+            layout="responsive"
+            src={ImageGalleryMilkBottle}
+            alt="Milk bottle"
+            width="240"
+            height="240"
+            objectFit="cover"
+          />
+          <Image
+            width="240"
+            height="240"
+            objectFit="cover"
+            layout="responsive"
+            src={ImageGalleryOrange}
+            alt="Orange"
+          />
+          <Image
+            layout="responsive"
+            src={ImageGalleryCone}
+            alt="Ice cream cone"
+            width="240"
+            height="240"
+            objectFit="cover"
+          />
+          <Image
+            layout="responsive"
+            src={ImageGallerySugarcubes}
+            alt="Sugar cubes"
+            width="240"
+            height="240"
+            objectFit="cover"
+          />
         </section>
         <footer>About Services Projects Contact</footer>
 

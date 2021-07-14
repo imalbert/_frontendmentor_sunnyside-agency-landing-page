@@ -122,6 +122,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ```css
 /* grids https://css-tricks.com/snippets/css/complete-guide-grid/ */
 
+/* https://nextjs.org/docs/api-reference/next/image */
+/* use nextjs <Image> layout="responsive" and objectFit="cover" -- check out the other props */
+
 ```
 
 #### Hiding components for nav
