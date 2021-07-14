@@ -119,6 +119,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 </style>
 ```
 
+```css
+/* grids https://css-tricks.com/snippets/css/complete-guide-grid/ */
+
+```
+
 #### Hiding components for nav
 
 https://www.accessibility-developer-guide.com/examples/hiding-elements/

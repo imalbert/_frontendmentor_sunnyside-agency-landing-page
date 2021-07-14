@@ -109,6 +109,7 @@
 /* testimonials */
 .testimonials {
   background-color: #FFFBF9;
+  padding-bottom: 80px;
 }
 .testimonials p {
   color: #5B6168;
@@ -124,6 +125,13 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+/* Image gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 @media(min-width: 495px) {

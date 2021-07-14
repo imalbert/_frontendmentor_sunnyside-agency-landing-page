@@ -8,6 +8,10 @@ import HamburgerIcon from "../images/icon-hamburger.svg";
 import ImageEmily from "../images/image-emily.jpg";
 import ImageThomas from "../images/image-thomas.jpg";
 import ImageJennie from "../images/image-jennie.jpg";
+import ImageGalleryCone from "../images/desktop/image-gallery-cone.jpg";
+import ImageGalleryMilkBottle from "../images/desktop/image-gallery-milkbottles.jpg";
+import ImageGalleryOrange from "../images/desktop/image-gallery-orange.jpg";
+import ImageGallerySugarcubes from "../images/desktop/image-gallery-sugarcubes.jpg";
 
 export default function Home() {
   const [navOpen, toggleNav] = React.useState(false);
@@ -115,7 +119,6 @@ export default function Home() {
 
           <div className={styles.avatar}>
             <Image
-              className={styles.avatar}
               height="70"
               width="70"
               src={ImageThomas}
@@ -133,7 +136,6 @@ export default function Home() {
 
           <div className={styles.avatar}>
             <Image
-              className={styles.avatar}
               height="70"
               width="70"
               src={ImageJennie}
@@ -149,7 +151,12 @@ export default function Home() {
             <h5>Business Owner</h5>
           </div>
         </section>
-        {/* <Image src="" alt="" /> */}
+        <section className={styles.gallery}>
+          <Image src={ImageGalleryMilkBottle} alt="Milk bottle" />
+          <Image src={ImageGalleryOrange} alt="Orange" />
+          <Image src={ImageGalleryCone} alt="Ice cream cone" />
+          <Image src={ImageGallerySugarcubes} alt="Sugar cubes" />
+        </section>
         <footer>About Services Projects Contact</footer>
 
         <div className="attribution">
