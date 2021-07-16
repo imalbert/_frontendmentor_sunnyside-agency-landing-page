@@ -55,36 +55,42 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <Image
-          src={ImageTransform}
-          alt="A render of an egg on a yellow background"
-        />
-        <section className={styles.section}>
-          <h2>Transform your brand</h2>
-          <p>
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
-          </p>
-          <a className="yellow" href="#">
-            Learn more
-          </a>
-        </section>
-        <Image
-          src={ImageStandOut}
-          alt="A render of a pink cup on a pink background"
-        />
-        <section className={styles.section}>
-          <h2>Stand out to the right audience</h2>
-          <p>
-            Using a collaborative formula of designers, reseearchers,
-            photographers, videographers, and copywriters, we&apos;ll build and
-            extend your brand in digital places.
-          </p>
-          <a className="pink" href="#">
-            Learn more
-          </a>
-        </section>
+        <div className={styles.learnSection}>
+          <Image
+            className={styles.learnSection1}
+            src={ImageTransform}
+            alt="A render of an egg on a yellow background"
+            objectFit="cover"
+          />
+          <section className={`${styles.section} ${styles.learnSection2}`}>
+            <h2>Transform your brand</h2>
+            <p>
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a className="yellow" href="#">
+              Learn more
+            </a>
+          </section>
+          <Image
+            className={styles.learnSection3}
+            src={ImageStandOut}
+            alt="A render of a pink cup on a pink background"
+            objectFit="cover"
+          />
+          <section className={`${styles.section} ${styles.learnSection4}`}>
+            <h2>Stand out to the right audience</h2>
+            <p>
+              Using a collaborative formula of designers, reseearchers,
+              photographers, videographers, and copywriters, we&apos;ll build
+              and extend your brand in digital places.
+            </p>
+            <a className="pink" href="#">
+              Learn more
+            </a>
+          </section>
+        </div>
         <section
           className={`${styles.tallSection} ${styles.graphicDesignerBg}`}
         >

@@ -169,9 +169,29 @@
   }
 }
 
+.learnSection2, .learnSection4 {
+  justify-content: center;
+}
+.learnSection1 { grid-area: learn-image-egg; }
+.learnSection2 { grid-area: learn-transform; }
+.learnSection3 { grid-area: learn-image-cup; }
+.learnSection4 { grid-area: learn-standout; }
+.learnSection { display: unset; }
+@media (min-width: 678px) {
+  .learnSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "learn-transform learn-image-egg"
+      "learn-image-cup learn-standout";
+  }
+}
+
 @media (min-width: 375px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+
 }
