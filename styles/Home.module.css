@@ -248,4 +248,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
+
+  
+  .footer ul {
+    justify-content: center;
+    gap: 40px;
+  }
+  .socials ul { gap: 30px; }
 }
