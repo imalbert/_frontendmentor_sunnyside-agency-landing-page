@@ -186,6 +186,13 @@
   .hero {
     background-image: url('../images/desktop/image-header.jpg')
   }
+
+  .graphicDesignerBg {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+  }
+  .photographyBg {
+    background-image: url('../images/desktop/image-photography.jpg');
+  }
 }
 
 @media (min-width: 375px) {
@@ -223,12 +230,6 @@
     letter-spacing: 0em;
   }
 
-  .graphicDesignerBg {
-    background-image: url('../images/desktop/image-graphic-design.jpg');
-  }
-  .photographyBg {
-    background-image: url('../images/desktop/image-photography.jpg');
-  }
   .learnSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
