@@ -117,33 +117,22 @@
 .learnSection3 { grid-area: learn-image-cup; }
 .learnSection4 { grid-area: learn-standout; }
 .learnSection { display: unset; }
-@media (min-width: 680px) {
-  .graphicDesignerBg {
-    background-image: url('../images/desktop/image-graphic-design.jpg');
-  }
-  .photographyBg {
-    background-image: url('../images/desktop/image-photography.jpg');
-  }
-
-  .learnSection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "learn-transform learn-image-egg"
-      "learn-image-cup learn-standout"
-      "graphic-designer photography";
-  }
-}
 
 /* testimonials */
 .testimonials {
-  background-color: #FFFBF9;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 80px;
+  gap: 60px;
 }
 .testimonials p {
   color: #5B6168;
   font-weight: 500;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .avatar {
   margin-top: 30px;
@@ -203,5 +192,29 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 680px) {
+  .graphicDesignerBg {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+  }
+  .photographyBg {
+    background-image: url('../images/desktop/image-photography.jpg');
+  }
+
+  .learnSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "learn-transform learn-image-egg"
+      "learn-image-cup learn-standout"
+      "graphic-designer photography";
+  }
+
+  .testimonials {
+    flex-direction: row;
+    gap: 12px;
   }
 }

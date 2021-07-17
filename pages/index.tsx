@@ -108,57 +108,65 @@ export default function Home() {
             </p>
           </section>
         </div>
-        <section className={`${styles.section} ${styles.testimonials}`}>
+        <section className={styles.section} style={{ background: "#FFFBF9" }}>
           <h3>Client testimonials</h3>
-          <div className={styles.avatar}>
-            <Image
-              height="70"
-              width="70"
-              src={ImageEmily}
-              alt="Image of Emily R."
-            />
-          </div>
-          <p>
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-          <div className={styles.nameAndTitle}>
-            <h4>Emily R.</h4>
-            <h5>Marketing Director</h5>
-          </div>
+          <div className={styles.testimonials}>
+            <div className={styles.testimonial}>
+              <div className={styles.avatar}>
+                <Image
+                  height="70"
+                  width="70"
+                  src={ImageEmily}
+                  alt="Image of Emily R."
+                />
+              </div>
+              <p>
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <div className={styles.nameAndTitle}>
+                <h4>Emily R.</h4>
+                <h5>Marketing Director</h5>
+              </div>
+            </div>
 
-          <div className={styles.avatar}>
-            <Image
-              height="70"
-              width="70"
-              src={ImageThomas}
-              alt="Image of Thomas S. Chief"
-            />
-          </div>
-          <p>
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <div className={styles.nameAndTitle}>
-            <h4>Thomas S. Chief</h4>
-            <h5>Operating Officer</h5>
-          </div>
+            <div className={styles.testimonial}>
+              <div className={styles.avatar}>
+                <Image
+                  height="70"
+                  width="70"
+                  src={ImageThomas}
+                  alt="Image of Thomas S. Chief"
+                />
+              </div>
+              <p>
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <div className={styles.nameAndTitle}>
+                <h4>Thomas S. Chief</h4>
+                <h5>Operating Officer</h5>
+              </div>
+            </div>
 
-          <div className={styles.avatar}>
-            <Image
-              height="70"
-              width="70"
-              src={ImageJennie}
-              alt="Image of Jennie F."
-            />
-          </div>
-          <p>
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
-          </p>
-          <div className={styles.nameAndTitle}>
-            <h4>Jennie F.</h4>
-            <h5>Business Owner</h5>
+            <div className={styles.testimonial}>
+              <div className={styles.avatar}>
+                <Image
+                  height="70"
+                  width="70"
+                  src={ImageJennie}
+                  alt="Image of Jennie F."
+                />
+              </div>
+              <p>
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+              <div className={styles.nameAndTitle}>
+                <h4>Jennie F.</h4>
+                <h5>Business Owner</h5>
+              </div>
+            </div>
           </div>
         </section>
         <section className={styles.gallery}>
