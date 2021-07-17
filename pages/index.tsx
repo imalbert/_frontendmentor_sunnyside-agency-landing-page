@@ -90,24 +90,24 @@ export default function Home() {
               Learn more
             </a>
           </section>
+          <section
+            className={`${styles.tallSection} ${styles.graphicDesignerBg}`}
+          >
+            <h2>Graphic design</h2>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </section>
+          <section className={`${styles.tallSection} ${styles.photographyBg}`}>
+            <h2>Photography</h2>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </section>
         </div>
-        <section
-          className={`${styles.tallSection} ${styles.graphicDesignerBg}`}
-        >
-          <h2>Graphic design</h2>
-          <p>
-            Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients’
-            attention.
-          </p>
-        </section>
-        <section className={`${styles.tallSection} ${styles.photographyBg}`}>
-          <h2>Photography</h2>
-          <p>
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
-          </p>
-        </section>
         <section className={`${styles.section} ${styles.testimonials}`}>
           <h3>Client testimonials</h3>
           <div className={styles.avatar}>
