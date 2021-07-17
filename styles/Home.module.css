@@ -195,14 +195,40 @@
   }
 }
 
+.desktopNav {
+  display: none;
+}
+
 @media (min-width: 680px) {
+  .mobileNav, .hamburger {
+    display: none;
+  }
+  .desktopNav {
+    display: flex;
+    color: white;
+    gap: 30px;
+    font-weight: normal;
+  }
+  .desktopNav a {
+    text-transform: unset;
+    font-family: Barlow;
+  }
+  .desktopNav .primaryBtn {
+    text-transform: uppercase;
+    padding: 16px;
+    background: white;
+    color: black;
+    font-family: Fraunces;
+    border-radius: 9999px;
+    letter-spacing: 0em;
+  }
+
   .graphicDesignerBg {
     background-image: url('../images/desktop/image-graphic-design.jpg');
   }
   .photographyBg {
     background-image: url('../images/desktop/image-photography.jpg');
   }
-
   .learnSection {
     display: grid;
     grid-template-columns: 1fr 1fr;

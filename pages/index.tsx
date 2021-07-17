@@ -25,7 +25,24 @@ export default function Home() {
         <div className={styles.hero}>
           <nav className={styles.nav}>
             <span className={styles.logo}>sunnyside</span>
-            <div onClick={() => toggleNav(!navOpen)}>
+            <ul className={styles.desktopNav}>
+              <li>
+                <a>About</a>
+              </li>
+              <li>
+                <a>Services</a>
+              </li>
+              <li>
+                <a>Projects</a>
+              </li>
+              <li>
+                <a className={styles.primaryBtn}>Contact</a>
+              </li>
+            </ul>
+            <div
+              className={styles.hamburger}
+              onClick={() => toggleNav(!navOpen)}
+            >
               <Image
                 height="20"
                 width="25"
