@@ -1,6 +1,24 @@
+:root {
+  --a-border-bottom-color: lightblue;
+  --color-red: hsl(7, 99%, 70%);
+  --color-yellow: hsl(51, 100%, 49%);
+  --color-dark-cyan: hsl(167, 40%, 24%);
+  --color-dark-blue: hsl(198, 62%, 26%);
+  --color-moderate-cyan: hsl(168, 34%, 41%);
+
+  --color-desaturated-cyan: #9FD2C6;
+  --dark-desaturated-blue: hsl(212, 27%, 19%);
+  --dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  --base-font-size: 18px;
+}
+
 html,
 body {
-  font-size: 18px;
+  font-size: var(--base-font-size);
   padding: 0;
   margin: 0;
   font-family: Barlow, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -25,7 +43,7 @@ h1 {
   letter-spacing: 0.2em;
 }
 h3 {
-  color: #A9AAAD;
+  color: var(--dark-grayish-blue);
   letter-spacing: 0.25em;
   text-transform: uppercase;
   font-size: 0.9em;
@@ -35,7 +53,7 @@ h4 {
   color: #272F3D;
 }
 h5 {
-  color: #A9AAAD;
+  color: var(--dark-grayish-blue);
   font-size: 0.8em;
   font-family: unset;
   font-weight: 500;
@@ -43,22 +61,6 @@ h5 {
 ul {
   list-style: none;
   padding-left: 0;
-}
-
-:root {
-  --a-border-bottom-color: lightblue;
-  --color-red: hsl(7, 99%, 70%);
-  --color-yellow: hsl(51, 100%, 49%);
-  --color-dark-cyan: hsl(167, 40%, 24%);
-  --color-dark-blue: hsl(198, 62%, 26%);
-  --color-moderate-cyan: hsl(168, 34%, 41%);
-
-  --color-desaturated-cyan: #9FD2C6;
-  --dark-desaturated-blue: hsl(212, 27%, 19%);
-  --dark-grayish-blue: hsl(213, 9%, 39%);
-  --dark-grayish-blue: hsl(232, 10%, 55%);
-  --grayish-blue: hsl(210, 4%, 67%);
-  --white: hsl(0, 0%, 100%);
 }
 
 a {
