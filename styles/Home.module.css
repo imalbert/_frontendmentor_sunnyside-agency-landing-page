@@ -46,7 +46,7 @@
   flex-direction: column;
   opacity: 0;
   position: absolute;
-  background-color: #66BBF9AA;
+  background-color: #66BBF9;
   width: 100%;
   transition: ease-in 0.1s;
   z-index: -1;
