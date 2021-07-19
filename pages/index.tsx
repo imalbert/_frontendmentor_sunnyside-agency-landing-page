@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import ArrowDownIcon from "../images/icon-arrow-down.svg";
@@ -21,6 +22,9 @@ export default function Home() {
   const [navOpen, toggleNav] = React.useState(false);
   return (
     <>
+      <Head>
+        <title>Frontend Mentor | Sunnyside agency landing page</title>
+      </Head>
       <header>
         <div className={styles.hero}>
           <nav className={styles.nav}>
