@@ -67,7 +67,7 @@
 
 /* sections */
 .section p {
-  color: #9190A1;
+  color: var(--color-grayish-blue);
 }
 .section,
 .tallSection {
@@ -98,10 +98,12 @@
   background-repeat: no-repeat;
 }
 .graphicDesignerBg {
+  color: var(--color-dark-cyan);
   background-image: url('../images/mobile/image-graphic-design.jpg');
   grid-area: graphic-designer;
 }
 .photographyBg {
+  color: var(--color-dark-blue);
   background-image: url('../images/mobile/image-photography.jpg');
   grid-area: photography;
 }
@@ -126,7 +128,7 @@
   gap: 60px;
 }
 .testimonials p {
-  color: #5B6168;
+  color: var(--dark-grayish-blue);
   font-weight: 500;
 }
 .testimonial {
@@ -159,26 +161,25 @@
   display: flex;
   flex-direction: column;
   padding: 60px 30px;
-  background-color: #9FD2C6;
+  background-color: var(--color-desaturated-cyan);
   text-align: center;
-  color: #407165
+  color: var(--color-moderate-cyan);
 }
 .footer .logo {
-  color: #407165;
   font-size: 2.5rem;
+  color: var(--color-dark-cyan);
 }
 .footer ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 30px 0;
-  color: #538679;
+  color: var(--color-moderate-cyan);
 }
 .socials ul {
   justify-content: center;
   display: flex;
   gap: 25px;
-  color: #407165
 }
 
 /* switch bg exactly at 495px for seamless transition */
