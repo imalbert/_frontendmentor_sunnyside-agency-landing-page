@@ -99,7 +99,7 @@ export default function Home() {
           <section className={`${styles.section} ${styles.learnSection4}`}>
             <h2>Stand out to the right audience</h2>
             <p>
-              Using a collaborative formula of designers, reseearchers,
+              Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, we&apos;ll build
               and extend your brand in digital places.
             </p>
