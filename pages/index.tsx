@@ -17,6 +17,7 @@ import IconFB from "../images/icon-facebook.svg";
 import IconIG from "../images/icon-instagram.svg";
 import IconPT from "../images/icon-pinterest.svg";
 import IconTW from "../images/icon-twitter.svg";
+import Logo from "../images/logo.svg";
 
 export default function Home() {
   const [navOpen, toggleNav] = React.useState(false);
@@ -28,7 +29,13 @@ export default function Home() {
       <header>
         <div className={styles.hero}>
           <nav className={styles.nav}>
-            <span className={styles.logo}>sunnyside</span>
+            <Image
+              className={styles.logo}
+              height={30}
+              width={155}
+              src={Logo}
+              alt="sunnyside logo"
+            />
             <ul className={styles.desktopNav}>
               <li>
                 <a>About</a>
