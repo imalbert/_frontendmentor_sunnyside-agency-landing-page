@@ -191,7 +191,7 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.gallery}>
-          <h2 hidden>Gallery</h2>
+          <h2 className="sr-only sr-only-focusable">Gallery</h2>
           <Image
             layout="responsive"
             src={ImageGalleryMilkBottle}
