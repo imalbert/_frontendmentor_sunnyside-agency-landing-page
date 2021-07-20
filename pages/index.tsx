@@ -29,7 +29,7 @@ export default function Home() {
         <div className={styles.hero}>
           <nav className={styles.nav}>
             <span className={styles.logo}>sunnyside</span>
-            <ul role="navigation" className={styles.desktopNav}>
+            <ul className={styles.desktopNav}>
               <li>
                 <a>About</a>
               </li>
@@ -55,10 +55,7 @@ export default function Home() {
               />
             </div>
           </nav>
-          <nav
-            role="navigation"
-            className={`${styles.mobileNav} ${navOpen ? styles.open : ""}`}
-          >
+          <nav className={`${styles.mobileNav} ${navOpen ? styles.open : ""}`}>
             <div onClick={() => toggleNav(!navOpen)}>
               <Image
                 height="20"
@@ -194,6 +191,7 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.gallery}>
+          <h2 hidden>Gallery</h2>
           <Image
             layout="responsive"
             src={ImageGalleryMilkBottle}
