@@ -127,13 +127,29 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ```
 
+#### Solution Report
+
+##### Best pratices when writing a title
+
+https://dequeuniversity.com/rules/axe/4.2/document-title?application=axeAPI
+Title is the first thing that screen reader users hear when they arrive at a page. Treat it as an overview of the page for ALL viewers.
+
+- Don't duplicate titles across pages
+- Put all unique info first; Company name/brand go after
+- Make the page title match the top heading (ideally labelled as h1). `title` and `h2` elements essentially serve the same purpose
+
+##### Landmarks
+
+https://www.scottohara.me/blog/2018/03/03/landmarks.html
+
+- Main landmark should not be contained in another landmark
+- Document should not have more than one main landmark
+
 #### Hiding components for nav
 
-https://www.accessibility-developer-guide.com/examples/hiding-elements/
+- [ ] https://www.accessibility-developer-guide.com/examples/hiding-elements/
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 

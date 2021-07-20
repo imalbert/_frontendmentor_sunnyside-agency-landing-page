@@ -29,7 +29,7 @@ export default function Home() {
         <div className={styles.hero}>
           <nav className={styles.nav}>
             <span className={styles.logo}>sunnyside</span>
-            <ul className={styles.desktopNav}>
+            <ul role="navigation" className={styles.desktopNav}>
               <li>
                 <a>About</a>
               </li>
@@ -55,7 +55,10 @@ export default function Home() {
               />
             </div>
           </nav>
-          <nav className={`${styles.mobileNav} ${navOpen ? styles.open : ""}`}>
+          <nav
+            role="navigation"
+            className={`${styles.mobileNav} ${navOpen ? styles.open : ""}`}
+          >
             <div onClick={() => toggleNav(!navOpen)}>
               <Image
                 height="20"
@@ -69,10 +72,10 @@ export default function Home() {
             <a href="#">Projects</a>
             <a href="#">Contact</a>
           </nav>
-          <main>
+          <div>
             <h1>We are creatives</h1>
             <Image src={ArrowDownIcon} alt="scroll down" />
-          </main>
+          </div>
         </div>
       </header>
       <main>
@@ -224,45 +227,45 @@ export default function Home() {
             objectFit="cover"
           />
         </section>
-        <footer className={styles.footer}>
-          <span className={styles.logo}>sunnyside</span>
-          <div className={styles.links}>
-            <ul>
-              <li>About</li>
-              <li>Services</li>
-              <li>Projects</li>
-            </ul>
-          </div>
-          <div className={styles.socials}>
-            <ul>
-              <li>
-                <Image src={IconFB} alt="Facebook" width="20" height="20" />
-              </li>
-              <li>
-                <Image src={IconIG} alt="Instagram" width="20" height="20" />
-              </li>
-              <li>
-                <Image src={IconPT} alt="Pinterest" width="20" height="20" />
-              </li>
-              <li>
-                <Image src={IconTW} alt="Twitter" width="20" height="20" />
-              </li>
-            </ul>
-          </div>
-          <div className="attribution">
-            Challenge by{" "}
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Frontend Mentor
-            </a>
-            .
-            <br /> Coded by <a href="#">imalbert</a>.
-          </div>
-        </footer>
       </main>
+      <footer className={styles.footer}>
+        <span className={styles.logo}>sunnyside</span>
+        <div className={styles.links}>
+          <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </ul>
+        </div>
+        <div className={styles.socials}>
+          <ul>
+            <li>
+              <Image src={IconFB} alt="Facebook" width="20" height="20" />
+            </li>
+            <li>
+              <Image src={IconIG} alt="Instagram" width="20" height="20" />
+            </li>
+            <li>
+              <Image src={IconPT} alt="Pinterest" width="20" height="20" />
+            </li>
+            <li>
+              <Image src={IconTW} alt="Twitter" width="20" height="20" />
+            </li>
+          </ul>
+        </div>
+        <div className="attribution">
+          Challenge by{" "}
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Frontend Mentor
+          </a>
+          .
+          <br /> Coded by <a href="#">imalbert</a>.
+        </div>
+      </footer>
     </>
   );
 }
